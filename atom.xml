@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.muoun.com/"/>
-  <updated>2016-03-31T06:45:27.170Z</updated>
+  <updated>2016-03-31T15:02:44.057Z</updated>
   <id>http://www.muoun.com/</id>
   
   <author>
@@ -16,29 +16,100 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://www.muoun.com/2016/03/31/hello-world/"/>
-    <id>http://www.muoun.com/2016/03/31/hello-world/</id>
-    <published>2016-03-31T06:45:27.170Z</published>
-    <updated>2016-03-31T06:45:27.170Z</updated>
+    <title>Hexo启程-文章</title>
+    <link href="http://www.muoun.com/2016/03/31/2016-03-31-start-md/"/>
+    <id>http://www.muoun.com/2016/03/31/2016-03-31-start-md/</id>
+    <published>2016-03-31T14:09:10.000Z</published>
+    <updated>2016-03-31T15:02:44.057Z</updated>
     
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;Hexo写文利器—markdown&quot;&gt;&lt;a href=&quot;#Hexo写文利器—markdown&quot; class=&quot;headerlink&quot; title=&quot;Hexo写文利器—markdown&quot;&gt;&lt;/a&gt;Hexo写文利器—markdown&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;markdown基本语法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;1-斜体和粗体&quot;&gt;&lt;a href=&quot;#1-斜体和粗体&quot; class=&quot;headerlink&quot; title=&quot;1. 斜体和粗体&quot;&gt;&lt;/a&gt;1. 斜体和粗体&lt;/h3&gt;&lt;p&gt;使用 &lt;em&gt; 和 *&lt;/em&gt; 表示斜体和粗体。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;这是 &lt;em&gt;斜体&lt;/em&gt;，这是 &lt;strong&gt;粗体&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;2-分级标题&quot;&gt;&lt;a href=&quot;#2-分级标题&quot; class=&quot;headerlink&quot; title=&quot;2. 分级标题&quot;&gt;&lt;/a&gt;2. 分级标题&lt;/h3&gt;&lt;p&gt;使用 --- 表示横线。 反斜杠\ 后面的内容语法符号不解析&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5 id=&quot;这是一个五级标题&quot;&gt;&lt;a href=&quot;#这是一个五级标题&quot; class=&quot;headerlink&quot; title=&quot;这是一个五级标题&quot;&gt;&lt;/a&gt;这是一个五级标题&lt;/h5&gt;&lt;p&gt;你也可以选择在行首加井号表示不同级别的标题 (H1-H6)，例如：# H1, ## H2, ### H3，#### H4。&lt;/p&gt;
+&lt;h3 id=&quot;3-外链接&quot;&gt;&lt;a href=&quot;#3-外链接&quot; class=&quot;headerlink&quot; title=&quot;3. 外链接&quot;&gt;&lt;/a&gt;3. 外链接&lt;/h3&gt;&lt;p&gt;使用 [描述](链接地址) 为文字增加外链接。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;这是去往 &lt;a href=&quot;http://www.muoun.com&quot;&gt;本人博客&lt;/a&gt; 的链接。&lt;/p&gt;
+&lt;h3 id=&quot;4-无序列表&quot;&gt;&lt;a href=&quot;#4-无序列表&quot; class=&quot;headerlink&quot; title=&quot;4. 无序列表&quot;&gt;&lt;/a&gt;4. 无序列表&lt;/h3&gt;&lt;p&gt;使用 *，+，- 表示无序列表。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;无序列表项 一&lt;/li&gt;
+&lt;li&gt;无序列表项 二&lt;/li&gt;
+&lt;li&gt;无序列表项 三&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;5-有序列表&quot;&gt;&lt;a href=&quot;#5-有序列表&quot; class=&quot;headerlink&quot; title=&quot;5. 有序列表&quot;&gt;&lt;/a&gt;5. 有序列表&lt;/h3&gt;&lt;p&gt;使用数字和点表示有序列表。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;有序列表项 一&lt;/li&gt;
+&lt;li&gt;有序列表项 二&lt;/li&gt;
+&lt;li&gt;有序列表项 三&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;6-文字引用&quot;&gt;&lt;a href=&quot;#6-文字引用&quot; class=&quot;headerlink&quot; title=&quot;6. 文字引用&quot;&gt;&lt;/a&gt;6. 文字引用&lt;/h3&gt;&lt;p&gt;使用 &amp;gt; 表示文字引用。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;野火烧不尽，春风吹又生。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;7-行内代码块&quot;&gt;&lt;a href=&quot;#7-行内代码块&quot; class=&quot;headerlink&quot; title=&quot;7. 行内代码块&quot;&gt;&lt;/a&gt;7. 行内代码块&lt;/h3&gt;&lt;p&gt;使用 `代码` 表示行内代码块。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;让我们聊聊 &lt;code&gt;html&lt;/code&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;8-代码块&quot;&gt;&lt;a href=&quot;#8-代码块&quot; class=&quot;headerlink&quot; title=&quot;8.  代码块&quot;&gt;&lt;/a&gt;8.  代码块&lt;/h3&gt;&lt;p&gt;使用 四个缩进空格 表示代码块。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;这是一个代码块，此行左侧有四个不可见的空格。
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;9-插入图像&quot;&gt;&lt;a href=&quot;#9-插入图像&quot; class=&quot;headerlink&quot; title=&quot;9.  插入图像&quot;&gt;&lt;/a&gt;9.  插入图像&lt;/h3&gt;&lt;p&gt;使用 ![描述](图片链接地址) 插入图像。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.zybuluo.com/static/img/my_head.jpg&quot; alt=&quot;我的头像&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;10-标签分类&quot;&gt;&lt;a href=&quot;#10-标签分类&quot; class=&quot;headerlink&quot; title=&quot;10. 标签分类&quot;&gt;&lt;/a&gt;10. 标签分类&lt;/h3&gt;&lt;p&gt;在编辑区任意行的列首位置输入以下代码给文稿标签：&lt;/p&gt;
+&lt;p&gt;标签： 数学 英语 Markdown&lt;/p&gt;
+&lt;p&gt;或者&lt;/p&gt;
+&lt;p&gt;Tags： 数学 英语 Markdown&lt;/p&gt;
+&lt;h3 id=&quot;11-删除线&quot;&gt;&lt;a href=&quot;#11-删除线&quot; class=&quot;headerlink&quot; title=&quot;11. 删除线&quot;&gt;&lt;/a&gt;11. 删除线&lt;/h3&gt;&lt;p&gt;使用 ~~ 表示删除线。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;这是一段错误的文本。&lt;/del&gt;&lt;/p&gt;
+&lt;h3 id=&quot;13-加强的代码块&quot;&gt;&lt;a href=&quot;#13-加强的代码块&quot; class=&quot;headerlink&quot; title=&quot;13.加强的代码块&quot;&gt;&lt;/a&gt;13.加强的代码块&lt;/h3&gt;&lt;p&gt;支持四十一种编程语言的语法高亮的显示，行号显示。&lt;br&gt;```javascript&lt;br&gt;   代码  &lt;/p&gt;
+&lt;p&gt;```&lt;br&gt;非代码示例：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo apt-get install vim-gnome&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Python 示例：&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;@requires_authorization&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;somefunc&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(param1=&lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt;, param2=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&#39;&#39;&#39;A docstring&#39;&#39;&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; param1 &amp;gt; param2: &lt;span class=&quot;comment&quot;&gt;# interesting&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;Greater&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; (param2 - param1 + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;None&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;SomeClass&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;pass&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;message = &lt;span class=&quot;string&quot;&gt;&#39;&#39;&#39;interpreter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;... &lt;/span&gt;prompt&#39;&#39;&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;JavaScript 示例：&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* nth element in the fibonacci series.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* @param n &amp;gt;= 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* @return the nth element, &amp;gt;= 0.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;fib&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;n&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, b = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (--n &amp;gt;= &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    tmp = a;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    a += b;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    b = tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; a;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.write(fib(&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Hexo写文利器—markdown&quot;&gt;&lt;a href=&quot;#Hexo写文利器—markdown&quot; class=&quot;headerlink&quot; title=&quot;Hexo写文利器—markdown&quot;&gt;&lt;/a&gt;Hexo写文利器—markdown&lt;/h2&gt;&lt;blockquote&gt;
+
+    
+    </summary>
+    
+    
+      <category term="markdown" scheme="http://www.muoun.com/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过Hexo创建个人动态博客</title>
+    <link href="http://www.muoun.com/2016/03/31/2016-03-31-hexo-hello-md/"/>
+    <id>http://www.muoun.com/2016/03/31/2016-03-31-hexo-hello-md/</id>
+    <published>2016-03-31T13:43:18.000Z</published>
+    <updated>2016-03-31T14:06:41.612Z</updated>
+    
+    <content type="html">&lt;p&gt;一直想把域名用起来，今天花了几个小时的终于整了个hexo&lt;br&gt;本来打算自己写个经验贴，刚刚看到一个使用指南，只恨没有早点发现它&lt;br&gt;贴上目前看到最好的搭建帖子&lt;a href=&quot;http://www.jianshu.com/p/73779eacb494&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;简书-Hexo 靜態博客使用指南&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      hexo完全攻略,hexo教程
     
     </summary>
     
+      <category term="学习提升" scheme="http://www.muoun.com/categories/%E5%AD%A6%E4%B9%A0%E6%8F%90%E5%8D%87/"/>
+    
+    
+      <category term="hexo" scheme="http://www.muoun.com/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://www.muoun.com/tags/blog/"/>
     
   </entry>
   
