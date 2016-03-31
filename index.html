@@ -245,71 +245,28 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="Hexo写文利器—markdown"><a href="#Hexo写文利器—markdown" class="headerlink" title="Hexo写文利器—markdown"></a>Hexo写文利器—markdown</h2><blockquote>
-<p>markdown基本语法</p>
-</blockquote>
-<h3 id="1-斜体和粗体"><a href="#1-斜体和粗体" class="headerlink" title="1. 斜体和粗体"></a>1. 斜体和粗体</h3><p>使用 <em> 和 *</em> 表示斜体和粗体。</p>
-<p>示例：</p>
-<p>这是 <em>斜体</em>，这是 <strong>粗体</strong>。</p>
-<h3 id="2-分级标题"><a href="#2-分级标题" class="headerlink" title="2. 分级标题"></a>2. 分级标题</h3><p>使用 --- 表示横线。 反斜杠\ 后面的内容语法符号不解析</p>
-<hr>
-<h5 id="这是一个五级标题"><a href="#这是一个五级标题" class="headerlink" title="这是一个五级标题"></a>这是一个五级标题</h5><p>你也可以选择在行首加井号表示不同级别的标题 (H1-H6)，例如：# H1, ## H2, ### H3，#### H4。</p>
-<h3 id="3-外链接"><a href="#3-外链接" class="headerlink" title="3. 外链接"></a>3. 外链接</h3><p>使用 [描述](链接地址) 为文字增加外链接。</p>
-<p>示例：</p>
-<p>这是去往 <a href="http://www.muoun.com">本人博客</a> 的链接。</p>
-<h3 id="4-无序列表"><a href="#4-无序列表" class="headerlink" title="4. 无序列表"></a>4. 无序列表</h3><p>使用 *，+，- 表示无序列表。</p>
-<p>示例：</p>
-<ul>
-<li>无序列表项 一</li>
-<li>无序列表项 二</li>
-<li>无序列表项 三</li>
-</ul>
-<h3 id="5-有序列表"><a href="#5-有序列表" class="headerlink" title="5. 有序列表"></a>5. 有序列表</h3><p>使用数字和点表示有序列表。</p>
-<p>示例：</p>
-<ol>
-<li>有序列表项 一</li>
-<li>有序列表项 二</li>
-<li>有序列表项 三</li>
-</ol>
-<h3 id="6-文字引用"><a href="#6-文字引用" class="headerlink" title="6. 文字引用"></a>6. 文字引用</h3><p>使用 &gt; 表示文字引用。</p>
-<p>示例：</p>
-<blockquote>
-<p>野火烧不尽，春风吹又生。</p>
-</blockquote>
-<h3 id="7-行内代码块"><a href="#7-行内代码块" class="headerlink" title="7. 行内代码块"></a>7. 行内代码块</h3><p>使用 `代码` 表示行内代码块。</p>
-<p>示例：</p>
-<p>让我们聊聊 <code>html</code>。</p>
-<h3 id="8-代码块"><a href="#8-代码块" class="headerlink" title="8.  代码块"></a>8.  代码块</h3><p>使用 四个缩进空格 表示代码块。</p>
-<p>示例：</p>
-<pre><code>这是一个代码块，此行左侧有四个不可见的空格。
-</code></pre><h3 id="9-插入图像"><a href="#9-插入图像" class="headerlink" title="9.  插入图像"></a>9.  插入图像</h3><p>使用 ![描述](图片链接地址) 插入图像。</p>
-<p>示例：</p>
-<p><img src="https://www.zybuluo.com/static/img/my_head.jpg" alt="我的头像"></p>
-<h3 id="10-标签分类"><a href="#10-标签分类" class="headerlink" title="10. 标签分类"></a>10. 标签分类</h3><p>在编辑区任意行的列首位置输入以下代码给文稿标签：</p>
-<p>标签： 数学 英语 Markdown</p>
-<p>或者</p>
-<p>Tags： 数学 英语 Markdown</p>
-<h3 id="11-删除线"><a href="#11-删除线" class="headerlink" title="11. 删除线"></a>11. 删除线</h3><p>使用 ~~ 表示删除线。</p>
-<p><del>这是一段错误的文本。</del></p>
-<h3 id="13-加强的代码块"><a href="#13-加强的代码块" class="headerlink" title="13.加强的代码块"></a>13.加强的代码块</h3><p>支持四十一种编程语言的语法高亮的显示，行号显示。<br>```javascript<br>   代码  </p>
-<p>```<br>非代码示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install vim-gnome</span><br></pre></td></tr></table></figure>
-<p>Python 示例：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></span><br><span class="line">    <span class="string">'''A docstring'''</span></span><br><span class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></span><br><span class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span><br><span class="line"><span class="meta">... </span>prompt'''</span></span><br></pre></td></tr></table></figure>
-<p>JavaScript 示例：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line">* nth element in the fibonacci series.</span><br><span class="line">* @param n &gt;= 0</span><br><span class="line">* @return the nth element, &gt;= 0.</span><br><span class="line">*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fib</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1</span>, b = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">var</span> tmp;</span><br><span class="line">  <span class="keyword">while</span> (--n &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">    tmp = a;</span><br><span class="line">    a += b;</span><br><span class="line">    b = tmp;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.write(fib(<span class="number">10</span>));</span><br></pre></td></tr></table></figure>
+              hexo编写文章语法
+          
       
     </div>
     
     <div class="article-info article-info-index">
       
       
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/学习提升/">学习提升</a>
+    </div>
+
 
       
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/2016/03/31/2016-03-31-start-md/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
