@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>通过Hexo创建个人静态博客 | 木偶·沐 blog</title>
+  <title>hexo常用命令 | 木偶·沐 blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo完全攻略,hexo教程">
+  <meta name="description" content="hexo常用命令">
 <meta property="og:type" content="article">
-<meta property="og:title" content="通过Hexo创建个人静态博客">
-<meta property="og:url" content="http://www.muoun.com/2016/03/31/2016-03-31-hexo-hello-md/index.html">
+<meta property="og:title" content="hexo常用命令">
+<meta property="og:url" content="http://www.muoun.com/2016/04/20/2016-04-20-hexo-cmd-md/index.html">
 <meta property="og:site_name" content="木偶·沐 blog">
-<meta property="og:description" content="hexo完全攻略,hexo教程">
-<meta property="og:updated_time" content="2016-04-20T03:05:08.109Z">
+<meta property="og:description" content="hexo常用命令">
+<meta property="og:updated_time" content="2016-04-20T07:22:32.064Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="通过Hexo创建个人静态博客">
-<meta name="twitter:description" content="hexo完全攻略,hexo教程">
+<meta name="twitter:title" content="hexo常用命令">
+<meta name="twitter:description" content="hexo常用命令">
   
     <link rel="alternative" href="/atom.xml" title="木偶·沐 blog" type="application/atom+xml">
   
@@ -212,11 +212,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-2016-03-31-hexo-hello-md" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-2016-04-20-hexo-cmd-md" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/31/2016-03-31-hexo-hello-md/" class="article-date">
-      <time datetime="2016-03-31T13:43:18.000Z" itemprop="datePublished">2016-03-31</time>
+      <a href="/2016/04/20/2016-04-20-hexo-cmd-md/" class="article-date">
+      <time datetime="2016-04-20T07:04:09.000Z" itemprop="datePublished">2016-04-20</time>
 </a>
     </div>
   
@@ -229,7 +229,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      通过Hexo创建个人静态博客
+      hexo常用命令
     </h1>
   
 
@@ -254,10 +254,71 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>一直想把域名用起来，今天花了几个小时的终于整了个hexo<br>本来打算自己写个经验贴，发现网上的搭建帖子都很全面了<br>推荐 </p>
-<blockquote>
-<p><a href="http://www.zipperary.com/categories/hexo/" target="_blank" rel="external">Zippera的hexo系列文章</a></p>
+        <blockquote>
+<p>简写</p>
 </blockquote>
+<p>hexo n == hexo new</p>
+<p>hexo p == hexo publish</p>
+<p>hexo g == hexo generate</p>
+<p>hexo s == hexo server</p>
+<p>hexo d == hexo deploy</p>
+<blockquote>
+<p>服务器</p>
+</blockquote>
+<p>hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。</p>
+<p>hexo server -s #静态模式</p>
+<p>hexo server -p 5000 #更改端口</p>
+<p>hexo server -i 192.168.1.1 #自定义 IP</p>
+<p>hexo clean #清除缓存 网页正常情况下可以忽略此条命令</p>
+<p>hexo g #生成静态网页</p>
+<p>hexo d #开始部署</p>
+<blockquote>
+<p>监视文件变动</p>
+</blockquote>
+<p>hexo generate #使用 Hexo 生成静态文件快速而且简单</p>
+<p>hexo generate –watch #监视文件变动</p>
+<blockquote>
+<p>完成后部署</p>
+</blockquote>
+<p>hexo generate –deploy<br>hexo deploy –generate</p>
+<p>hexo deploy -g<br>hexo server -g</p>
+<blockquote>
+<p>草稿</p>
+</blockquote>
+<p>hexo publish [layout] &lt;title&gt;</p>
+<blockquote>
+<p>模版</p>
+</blockquote>
+<p>hexo new “postName” #新建文章</p>
+<p>hexo new page “pageName” #新建页面</p>
+<p>hexo generate #生成静态页面至public目录</p>
+<p>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</p>
+<p>hexo deploy #将.deploy目录部署到GitHub</p>
+<p>hexo new [layout] <title> hexo new photo “My Gallery” hexo new “Hello World” –lang tw</title></p>
+<blockquote>
+<p>写作</p>
+</blockquote>
+<p>hexo new page &lt;title&gt;<br>hexo new post &lt;title&gt;</p>
+<p>变量    描述<br>:title    标题<br>:year    建立的年份（4 位数）<br>:month    建立的月份（2 位数）<br>:i_month    建立的月份（去掉开头的零）<br>:day    建立的日期（2 位数）<br>:i_day    建立的日期（去掉开头的零）</p>
+<h4 id="文章头部"><a href="#文章头部" class="headerlink" title="文章头部"></a>文章头部</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title: 使用Hexo搭建个人博客</span><br><span class="line">layout: post</span><br><span class="line">date: 2016-03-03 19:07:43</span><br><span class="line">comments: true</span><br><span class="line">categories: Blog</span><br><span class="line">tags: [Hexo]</span><br><span class="line">keywords: Hexo, Blog</span><br><span class="line">description: hexo啦啦啦</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>推送到服务器上</p>
+</blockquote>
+<p>hexo n #写文章</p>
+<p>hexo g #生成</p>
+<p>hexo d #部署 #可与 hexo g 合并为 hexo d -g</p>
+<blockquote>
+<p>报错</p>
+</blockquote>
+<p>ERROR Deployer not found: git<br>npm install hexo-deployer-git –save</p>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
       
     </div>
@@ -266,13 +327,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/03/31/2016-03-31-hexo-hello-md/">通过Hexo创建个人静态博客</a></p>
+        <p><span>本文标题:</span><a href="/2016/04/20/2016-04-20-hexo-cmd-md/">hexo常用命令</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">木偶·沐</a></p>
-        <p><span>发布时间:</span>2016-03-31, 21:43:18</p>
-        <p><span>最后更新:</span>2016-04-20, 11:05:08</p>
+        <p><span>发布时间:</span>2016-04-20, 15:04:09</p>
+        <p><span>最后更新:</span>2016-04-20, 15:22:32</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/03/31/2016-03-31-hexo-hello-md/" title="通过Hexo创建个人静态博客">http://www.muoun.com/2016/03/31/2016-03-31-hexo-hello-md/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://www.muoun.com/2016/03/31/2016-03-31-hexo-hello-md/　　作者: 木偶·沐" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/04/20/2016-04-20-hexo-cmd-md/" title="hexo常用命令">http://www.muoun.com/2016/04/20/2016-04-20-hexo-cmd-md/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://www.muoun.com/2016/04/20/2016-04-20-hexo-cmd-md/　　作者: 木偶·沐" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -285,12 +346,12 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/03/31/2016-03-31-start-md/">
-                    Hexo启程-文章
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/04/20/2016-04-20-jJsOperatorPrecedence-md/">
+                    javaSctipt 运算符优先级
                 </a>
             </div>
-        
         
     </nav>
 
@@ -299,7 +360,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#文章头部"><span class="toc-number">1.</span> <span class="toc-text">文章头部</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number"></span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number"></span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number"></span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number"></span> <span class="toc-text">Deploy to remote sites</span></a>
 </div>
 <style>
     .left-col .switch-btn {
@@ -361,7 +422,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/03/31/2016-03-31-hexo-hello-md/" data-title="通过Hexo创建个人静态博客" data-url="http://www.muoun.com/2016/03/31/2016-03-31-hexo-hello-md/"></div>
+    <div class="ds-thread" data-thread-key="2016/04/20/2016-04-20-hexo-cmd-md/" data-title="hexo常用命令" data-url="http://www.muoun.com/2016/04/20/2016-04-20-hexo-cmd-md/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -385,15 +446,15 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/03/31/2016-03-31-start-md/" title="上一篇: Hexo启程-文章">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2016/04/20/2016-04-20-jJsOperatorPrecedence-md/" title="下一篇: javaSctipt 运算符优先级">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
 

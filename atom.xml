@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.muoun.com/"/>
-  <updated>2016-03-31T15:13:13.493Z</updated>
+  <updated>2016-04-20T07:22:32.064Z</updated>
   <id>http://www.muoun.com/</id>
   
   <author>
@@ -14,6 +14,119 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo常用命令</title>
+    <link href="http://www.muoun.com/2016/04/20/2016-04-20-hexo-cmd-md/"/>
+    <id>http://www.muoun.com/2016/04/20/2016-04-20-hexo-cmd-md/</id>
+    <published>2016-04-20T07:04:09.000Z</published>
+    <updated>2016-04-20T07:22:32.064Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;简写&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;hexo n == hexo new&lt;/p&gt;
+&lt;p&gt;hexo p == hexo publish&lt;/p&gt;
+&lt;p&gt;hexo g == hexo generate&lt;/p&gt;
+&lt;p&gt;hexo s == hexo server&lt;/p&gt;
+&lt;p&gt;hexo d == hexo deploy&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;服务器&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。&lt;/p&gt;
+&lt;p&gt;hexo server -s #静态模式&lt;/p&gt;
+&lt;p&gt;hexo server -p 5000 #更改端口&lt;/p&gt;
+&lt;p&gt;hexo server -i 192.168.1.1 #自定义 IP&lt;/p&gt;
+&lt;p&gt;hexo clean #清除缓存 网页正常情况下可以忽略此条命令&lt;/p&gt;
+&lt;p&gt;hexo g #生成静态网页&lt;/p&gt;
+&lt;p&gt;hexo d #开始部署&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;监视文件变动&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;hexo generate #使用 Hexo 生成静态文件快速而且简单&lt;/p&gt;
+&lt;p&gt;hexo generate –watch #监视文件变动&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;完成后部署&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;hexo generate –deploy&lt;br&gt;hexo deploy –generate&lt;/p&gt;
+&lt;p&gt;hexo deploy -g&lt;br&gt;hexo server -g&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;草稿&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;hexo publish [layout] &amp;lt;title&amp;gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;模版&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;hexo new “postName” #新建文章&lt;/p&gt;
+&lt;p&gt;hexo new page “pageName” #新建页面&lt;/p&gt;
+&lt;p&gt;hexo generate #生成静态页面至public目录&lt;/p&gt;
+&lt;p&gt;hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）&lt;/p&gt;
+&lt;p&gt;hexo deploy #将.deploy目录部署到GitHub&lt;/p&gt;
+&lt;p&gt;hexo new [layout] &lt;title&gt; hexo new photo “My Gallery” hexo new “Hello World” –lang tw&lt;/title&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;写作&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;hexo new page &amp;lt;title&amp;gt;&lt;br&gt;hexo new post &amp;lt;title&amp;gt;&lt;/p&gt;
+&lt;p&gt;变量    描述&lt;br&gt;:title    标题&lt;br&gt;:year    建立的年份（4 位数）&lt;br&gt;:month    建立的月份（2 位数）&lt;br&gt;:i_month    建立的月份（去掉开头的零）&lt;br&gt;:day    建立的日期（2 位数）&lt;br&gt;:i_day    建立的日期（去掉开头的零）&lt;/p&gt;
+&lt;h4 id=&quot;文章头部&quot;&gt;&lt;a href=&quot;#文章头部&quot; class=&quot;headerlink&quot; title=&quot;文章头部&quot;&gt;&lt;/a&gt;文章头部&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;title: 使用Hexo搭建个人博客&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;layout: post&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;date: 2016-03-03 19:07:43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;comments: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;categories: Blog&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tags: [Hexo]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;keywords: Hexo, Blog&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;description: hexo啦啦啦&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;推送到服务器上&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;hexo n #写文章&lt;/p&gt;
+&lt;p&gt;hexo g #生成&lt;/p&gt;
+&lt;p&gt;hexo d #部署 #可与 hexo g 合并为 hexo d -g&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;报错&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ERROR Deployer not found: git&lt;br&gt;npm install hexo-deployer-git –save&lt;/p&gt;
+&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      hexo常用命令
+    
+    </summary>
+    
+      <category term="学习提升" scheme="http://www.muoun.com/categories/%E5%AD%A6%E4%B9%A0%E6%8F%90%E5%8D%87/"/>
+    
+    
+      <category term="hexo" scheme="http://www.muoun.com/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://www.muoun.com/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javaSctipt 运算符优先级</title>
+    <link href="http://www.muoun.com/2016/04/20/2016-04-20-jJsOperatorPrecedence-md/"/>
+    <id>http://www.muoun.com/2016/04/20/2016-04-20-jJsOperatorPrecedence-md/</id>
+    <published>2016-04-20T03:43:18.000Z</published>
+    <updated>2016-04-20T07:02:58.525Z</updated>
+    
+    <content type="html">&lt;div class=&quot;article-entry&quot;&gt;&lt;table class=&quot;table table-bordered table-striped table-condensed&quot;&gt;&lt;tr&gt;&lt;td&gt;优先级&lt;/td&gt;&lt;td&gt;运算类型&lt;/td&gt;&lt;td&gt;关联性&lt;/td&gt;&lt;td&gt;运算符&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;19&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;圆括号&lt;/td&gt;&lt;td&gt;n/a&lt;/td&gt;&lt;td&gt;(…)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan=&quot;3&quot;&gt;18&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;成员访问&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;···.···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;Coumputed Member Access&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;…[…]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;new(带参数列表)&lt;/td&gt;&lt;td&gt;n/a&lt;/td&gt;&lt;td&gt;new ··· (···)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot;&gt;17&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;函数调用&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;··· (···)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;new(无参数列表)&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;new ···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot;&gt;16&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;后置++&lt;/td&gt;&lt;td&gt;n/a&lt;/td&gt;&lt;td&gt;···++ &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;后置–&lt;/td&gt;&lt;td&gt;n/a&lt;/td&gt;&lt;td&gt;···–&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan=&quot;9&quot;&gt;15&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;逻辑非&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;!···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;按位非&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;~···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;一元加法&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;+···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;一元减法&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;-···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;前置++&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;++···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;前置–&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;–···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;typeof&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;typeof ···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;void&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;void ···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;delete&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;delete&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan=&quot;3&quot;&gt;14&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;乘法&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;···x···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;除法&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;···/···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;取模&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;···%···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan=&quot;2&quot;&gt;13&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;加法&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;···+···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;减法&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;···-···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan=&quot;3&quot;&gt;12&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;按位左移&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;···&amp;lt;&amp;lt;···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;按位右移&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;···&amp;gt;&amp;gt;···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;无符号右移&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;···&amp;gt;&amp;gt;&amp;gt;···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan=&quot;6&quot;&gt;11&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;小于&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;··· &amp;lt; ···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;小于等于&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;··· &amp;lt;= ···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;大于&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;··· &amp;gt; ···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;大于等于&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;··· &amp;gt;= ···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;in&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;··· in···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;instanceof&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;··· instanceof ···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td rowspan=&quot;4&quot;&gt;10&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;等号&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;==&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;非等号&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;!=&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;全等号&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;===&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;skyblue&quot;&gt;非全等号&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;!==&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;9&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;按位与&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;&amp;amp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;按位异或&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;^&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;按位或&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;|&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;逻辑与&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;&amp;amp;&amp;amp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;逻辑或&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;||&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;条件运算符&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;···?···:···&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;赋值&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;= ，+= ，-= ，*= ，/= ，%= ，&amp;lt;&amp;lt;== ，&amp;gt;&amp;gt;== ，&amp;gt;&amp;gt;&amp;gt;== &amp;amp;= ，^= ，|=&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;yield&lt;/td&gt;&lt;td&gt;从右到左&lt;/td&gt;&lt;td&gt;yield&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;spread&lt;/td&gt;&lt;td&gt;n/a&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td class=&quot;skyblue&quot;&gt;逗号&lt;/td&gt;&lt;td&gt;从左到右&lt;/td&gt;&lt;td&gt;···,···&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br&gt;&lt;/div&gt;
+
+</content>
+    
+    <summary type="html">
+    
+      javaSctipt 运算符优先级
+    
+    </summary>
+    
+      <category term="学习提升" scheme="http://www.muoun.com/categories/%E5%AD%A6%E4%B9%A0%E6%8F%90%E5%8D%87/"/>
+    
+    
+      <category term="JS" scheme="http://www.muoun.com/tags/JS/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo启程-文章</title>
@@ -90,13 +203,16 @@
   </entry>
   
   <entry>
-    <title>通过Hexo创建个人动态博客</title>
+    <title>通过Hexo创建个人静态博客</title>
     <link href="http://www.muoun.com/2016/03/31/2016-03-31-hexo-hello-md/"/>
     <id>http://www.muoun.com/2016/03/31/2016-03-31-hexo-hello-md/</id>
     <published>2016-03-31T13:43:18.000Z</published>
-    <updated>2016-03-31T14:06:41.612Z</updated>
+    <updated>2016-04-20T03:05:08.109Z</updated>
     
-    <content type="html">&lt;p&gt;一直想把域名用起来，今天花了几个小时的终于整了个hexo&lt;br&gt;本来打算自己写个经验贴，刚刚看到一个使用指南，只恨没有早点发现它&lt;br&gt;贴上目前看到最好的搭建帖子&lt;a href=&quot;http://www.jianshu.com/p/73779eacb494&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;简书-Hexo 靜態博客使用指南&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;一直想把域名用起来，今天花了几个小时的终于整了个hexo&lt;br&gt;本来打算自己写个经验贴，发现网上的搭建帖子都很全面了&lt;br&gt;推荐 &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.zipperary.com/categories/hexo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Zippera的hexo系列文章&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
     
     <summary type="html">
