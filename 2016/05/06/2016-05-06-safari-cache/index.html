@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>木偶·沐 blog</title>
+  <title>关于safari禁止读取缓存的解决方案 | 木偶·沐 blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="木偶·沐 blog">
-<meta property="og:url" content="http://www.muoun.com/index.html">
+  <meta name="description" content="safari缓存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于safari禁止读取缓存的解决方案">
+<meta property="og:url" content="http://www.muoun.com/2016/05/06/2016-05-06-safari-cache/index.html">
 <meta property="og:site_name" content="木偶·沐 blog">
-<meta property="og:description">
+<meta property="og:description" content="safari缓存">
+<meta property="og:updated_time" content="2016-05-06T09:35:21.823Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="木偶·沐 blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="关于safari禁止读取缓存的解决方案">
+<meta name="twitter:description" content="safari缓存">
   
     <link rel="alternative" href="/atom.xml" title="木偶·沐 blog" type="application/atom+xml">
   
@@ -30,13 +31,8 @@
   
   <link rel="stylesheet" href="/css/style.css">
   
-      <style> .article { opacity: 0;} </style>
-  
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
-    
-    
   
   
     <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
@@ -46,8 +42,8 @@
       var yiliaConfig = {
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -216,9 +212,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-2016-05-06-safari-cache" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-2016-05-06-safari-cache" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/05/06/2016-05-06-safari-cache/" class="article-date">
@@ -234,316 +228,182 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/06/2016-05-06-safari-cache/">关于safari禁止读取缓存的解决方案</a>
+    <h1 class="article-title" itemprop="name">
+      关于safari禁止读取缓存的解决方案
     </h1>
   
 
       </header>
       
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              safari缓存
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
     <a class="article-category-link" href="/categories/前端积累/">前端积累</a>
     </div>
 
 
-      
+        
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cache/">cache</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/safari/">safari</a></li></ul>
     </div>
 
-      
-        <p class="article-more-link">
-          <a href="/2016/05/06/2016-05-06-safari-cache/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-2016-04-20-hexo-cmd-md" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/20/2016-04-20-hexo-cmd-md/" class="article-date">
-      <time datetime="2016-04-20T07:04:09.000Z" itemprop="datePublished">2016-04-20</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/20/2016-04-20-hexo-cmd-md/">hexo常用命令</a>
-    </h1>
-  
-
-      </header>
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
       
           
-              hexo常用命令
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/学习提升/">学习提升</a>
-    </div>
-
+        <p>最近工作遇到一个问题，在safari【iphone 4s 】中多次后退刷新会导致页面空白，通过抓包发现原来后退重刷的是304请求<br>第一次304是显示正常<br>然后刷新一次，304就空白页面了</p>
+<p>最后解决方法就是在已经页面的时候 就把url中的时间戳给改<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">history.replaceState(&#123;&#125;,<span class="string">''</span>,replaceParamVal(<span class="string">'_t'</span>,(<span class="keyword">new</span> <span class="built_in">Date</span>()).getTime(),<span class="built_in">window</span>.location.href));</span><br></pre></td></tr></table></figure></p>
+<p>replaceParamVal(param,value,url)<br>这个方法就是为url增加个参数param值为value,如果存在就替换param值为value<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">replaceParamVal</span>(<span class="params">paramName,value,oUrl</span>) </span>&#123;</span><br><span class="line">    oUrl = oUrl || <span class="built_in">window</span>.location.href.toString();</span><br><span class="line">    <span class="keyword">var</span> re=<span class="built_in">eval</span>(<span class="string">'/('</span>+ paramName+<span class="string">'=)([^&amp;]*)/gi'</span>);</span><br><span class="line">    <span class="keyword">if</span>(oUrl.match(re))&#123;</span><br><span class="line">    	oUrl = oUrl.replace(re,paramName+<span class="string">'='</span>+value);</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(oUrl.indexOf(<span class="string">'?'</span>)&lt;<span class="number">0</span>)&#123;</span><br><span class="line">    	oUrl+=<span class="string">'?'</span>+paramName+<span class="string">'='</span>+value;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    	oUrl+=<span class="string">'&amp;'</span>+paramName+<span class="string">'='</span>+value;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> oUrl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/04/20/2016-04-20-hexo-cmd-md/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-2016-04-20-jJsOperatorPrecedence-md" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/20/2016-04-20-jJsOperatorPrecedence-md/" class="article-date">
-      <time datetime="2016-04-20T03:43:18.000Z" itemprop="datePublished">2016-04-20</time>
-</a>
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/05/06/2016-05-06-safari-cache/">关于safari禁止读取缓存的解决方案</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">木偶·沐</a></p>
+        <p><span>发布时间:</span>2016-05-06, 17:18:25</p>
+        <p><span>最后更新:</span>2016-05-06, 17:35:21</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/06/2016-05-06-safari-cache/" title="关于safari禁止读取缓存的解决方案">http://www.muoun.com/2016/05/06/2016-05-06-safari-cache/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://www.muoun.com/2016/05/06/2016-05-06-safari-cache/　　作者: 木偶·沐" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+
+
+
+    <nav id="article-nav">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/20/2016-04-20-jJsOperatorPrecedence-md/">javaSctipt 运算符优先级</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              javaSctipt 运算符优先级
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/学习提升/">学习提升</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/">JS</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/04/20/2016-04-20-jJsOperatorPrecedence-md/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-2016-03-31-start-md" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/31/2016-03-31-start-md/" class="article-date">
-      <time datetime="2016-03-31T14:09:10.000Z" itemprop="datePublished">2016-03-31</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/31/2016-03-31-start-md/">Hexo启程-文章</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              hexo编写文章语法
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/学习提升/">学习提升</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/03/31/2016-03-31-start-md/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-2016-03-31-hexo-hello-md" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/31/2016-03-31-hexo-hello-md/" class="article-date">
-      <time datetime="2016-03-31T13:43:18.000Z" itemprop="datePublished">2016-03-31</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/04/20/2016-04-20-hexo-cmd-md/">
+                    hexo常用命令
+                </a>
+            </div>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/31/2016-03-31-hexo-hello-md/">通过Hexo创建个人静态博客</a>
-    </h1>
-  
+    </nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              hexo完全攻略,hexo教程
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/学习提升/">学习提升</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/03/31/2016-03-31-hexo-hello-md/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
 
 
 
 
+    <div class="share">
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+    <a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
+    <a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+    </div>
+    <script>
+        window._bd_share_config={
+            "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
 
 
 
-  
-  
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/05/06/2016-05-06-safari-cache/" data-title="关于safari禁止读取缓存的解决方案" data-url="http://www.muoun.com/2016/05/06/2016-05-06-safari-cache/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"muoun"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/04/20/2016-04-20-hexo-cmd-md/" title="下一篇: hexo常用命令">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/06/2016-05-06-safari-cache/">关于safari禁止读取缓存的解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/20/2016-04-20-hexo-cmd-md/">hexo常用命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/20/2016-04-20-jJsOperatorPrecedence-md/">javaSctipt 运算符优先级</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/31/2016-03-31-start-md/">Hexo启程-文章</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/31/2016-03-31-hexo-hello-md/">通过Hexo创建个人静态博客</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
