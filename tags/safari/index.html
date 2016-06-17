@@ -18,7 +18,7 @@
     <link rel="alternative" href="/atom.xml" title="木偶·沐 blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
   
       <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
@@ -143,7 +143,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/blog/" style="font-size: 20px;">blog</a> <a href="/tags/cache/" style="font-size: 10px;">cache</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/safari/" style="font-size: 10px;">safari</a>
+                        <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/blog/" style="font-size: 20px;">blog</a> <a href="/tags/cache/" style="font-size: 10px;">cache</a> <a href="/tags/grunt/" style="font-size: 10px;">grunt</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/nodeJS/" style="font-size: 10px;">nodeJS</a> <a href="/tags/safari/" style="font-size: 10px;">safari</a>
                     </div>
                 </section>
                 
@@ -156,7 +156,7 @@
                     
                       <a target="_blank" class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://funny99.github.io/">大妞</a>
                     
                     </div>
                 </section>
@@ -300,22 +300,6 @@
     </div>
     
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
 
 
 
